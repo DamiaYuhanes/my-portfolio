@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAME (Top-left) -->
+  <div class="top-left-name">YOUR NAME</div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Project details</a>
+    <a href="#skills">Skills</a>
+    <a href="#recommendations">Recommendations</a>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="about-container">
+      <img
+        src="images/damia_farid.jpg"
+        alt="Profile"
+        class="profile-img"
+      />
+
+      <div class="about-text">
+        <h1>Hi, I’m DAMIA FARID 👋</h1>
+        <p>
+          I’m a learner exploring web development and building my portfolio page
+          using HTML, CSS, and JavaScript. I enjoy creating clean, user-friendly
+          webpages and learning new technical skills step by step.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder sections (we’ll fill these next) -->
+  <section id="projects" class="section">
+  <h2>Project details</h2>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>
+        A personal portfolio webpage built using HTML, CSS, and JavaScript with
+        navigation, sections, and responsive layout.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Task Tracker Layout</h3>
+      <p>
+        A simple task-tracking interface mockup featuring task cards, priority
+        labels, and basic UI styling.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Product Landing Page</h3>
+      <p>
+        A landing page design showcasing a product with a hero section, feature
+        highlights, and call-to-action buttons.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+      <h3>HTML</h3>
+      <p>Experience building structured webpages.</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+      <h3>CSS</h3>
+      <p>Styling websites and creating layouts.</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+      <h3>JavaScript</h3>
+      <p>Adding interactivity to webpages.</p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="recommendations" class="section">
+  <h2>Recommendations</h2>
+
+  <!-- Existing recommendations -->
+  <div class="reco-list" id="recoList">
+    <div class="reco-card">"Great teamwork and strong effort!"</div>
+    <div class="reco-card">"Very creative and always willing to learn."</div>
+    <div class="reco-card">"Communicates clearly and delivers on time."</div>
+  </div>
+
+  <!-- Add recommendation form -->
+  <div class="reco-form">
+    <h3>Add a recommendation</h3>
+
+    <input type="text" id="userName" placeholder="Your name (optional)">
+    <textarea id="userMessage" placeholder="Write your recommendation here..." rows="4"></textarea>
+
+    <button id="submitReco">Submit</button>
+  </div>
+</section>
+
+<!-- POP-UP -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <p>✅ Thank you! Your recommendation has been added.</p>
+    <button id="closePopup">Close</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
